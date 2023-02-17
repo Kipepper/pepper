@@ -1,0 +1,32 @@
+package javaprogram;
+
+import java.util.Scanner;
+
+public class VariablesAndDatatypes {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter Num1: ");
+		int num1 = input.nextInt();
+		System.out.println("Enter Num2: ");
+		int num2 = input.nextInt();
+		System.out.println("Enter Num3: ");
+		int num3 = input.nextInt();
+		
+		if(num1>num2 && num2>num3) {
+			System.out.println(num1 + "\n" + num2 + "\n" + num3);
+		}else if(num1>num3 && num3>num2) {
+			System.out.println(num1 + "\n" + num3 + "\n" + num2);
+		}else if(num2>num3 && num3>num1) {
+			System.out.println(num2 + "\n" + num3 + "\n" + num1);
+		}else if(num2>num3 && num3<num1) {
+			System.out.println(num2 + "\n" + num1 + "\n" + num3);
+		}else if(num3>num2 && num2>num1) {
+			System.out.println(num3 + "\n" + num2 + "\n" + num1);
+		}else if(num3>num2 && num2<num1) {
+			System.out.println(num3 + "\n" + num1 + "\n" + num2);
+		}
+	}
+
+}
